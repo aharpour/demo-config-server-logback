@@ -1,4 +1,4 @@
 app:
   data-center: something
 server:
-  port:45436
+  port: 45436
