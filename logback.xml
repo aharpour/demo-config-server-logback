@@ -2,7 +2,8 @@
 <configuration>
   <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
   ​
-  <property name="springAppName" value="logfile"/>
+  <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
   <property name="LOG_FILE" value="${BUILD_FOLDER:-build}/${springAppName}"/>​
 
   <springProperty name="appName" source="spring.application.name"/>
